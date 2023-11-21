@@ -1,0 +1,56 @@
+/* Add your CSS styling for the raid frames and popup here */
+    body {
+        background: url('https://64.media.tumblr.com/1a2a8c82361222daa020e21400bef88d/tumblr_pbr3nbNVtc1xzkabyo1_1280.gifv') center/cover no-repeat fixed;
+        font-family: "Montserrat";
+    }
+    p {
+        color: #000000;
+        font-family: "Montserrat";
+    }
+    h1 { 
+        color: #000;
+        font-family: "Montserrat";
+    }
+    h2 {
+        color: #000;
+        font-family: "Montserrat";
+    }
+    h3 {
+        color: #000;
+        font-family: "Montserrat";
+    }
+    h4 { 
+        color: #000;
+        font-family: "Montserrat";
+    }
+    
+    .raid-frame {
+      width: 250px;
+      height: 125px;
+      border: 1px solid #cccccc88;
+      margin: 2px;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .mana-bar {
+      height: 10px;
+      width: 100%;
+    }
+
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: rgba(187, 161, 161, 0.952);
+      border: 1px solid #3f3d3d;
+      font-family: "Montserrat";
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
