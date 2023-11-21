@@ -67,9 +67,11 @@
 <body>
   <div id="raidFramesContainer"></div>
 
-  <div>
+  <div id="playerTextInput">
     <label for="playerName">Player Name:</label>
     <input type="text" id="playerName" placeholder="Enter player name">
+    <label for="playerRealm">Player Realm:</label>
+    <input type="text" id="playerRealm" placeholder="Enter player Realm">
     <label for="playerClass">Player Class:</label>
     <select id="playerClass">
       <option value="DeathKnight">Death Knight</option>
@@ -95,6 +97,7 @@
     document.addEventListener("DOMContentLoaded", function() {
       const raidFramesContainer = document.getElementById("raidFramesContainer");
       const playerNameInput = document.getElementById("playerName");
+      const playerRealmInput = document.getElementById("playerRealm");
       const playerClassSelect = document.getElementById("playerClass");
       const popup = document.getElementById("popup");
 
@@ -117,25 +120,25 @@
 
       // Predefined raid group
       const predefinedRaidGroup = [
-        { name: "Shodo", class: "Paladin" },
-        { name: "Mishern", class: "Shaman" },
-        { name: "Bouziedk", class: "DeathKnight" },
-        { name: "Hypixyl", class: "Priest" },
-        { name: "Liliru", class: "Evoker" },
-        { name: "Spectralguy", class: "Priest" },
-        { name: "Fidz", class: "Druid" },
-        { name: "Demonann", class: "DemonHunter" },
-        { name: "Freyalyse", class: "Hunter" },
-        { name: "Safari", class: "Druid" },
-        { name: "Draasin", class: "Evoker" },
-	      { name: "Hatedthat", class: "Druid" },
-  	    { name: "Swagasian", class: "Rogue" },
-  	    { name: "Sinisong", class: "Mage" },
-  	    { name: "Sickflash", class: "Paladin" },
-  	    { name: "Salban", class: "Warrior" },
-  	    { name: "Pheus", class: "Shaman" },
-  	    { name: "Orbitall", class: "Shaman" },
-  	    { name: "Sanghai", class: "Monk" },
+        { name: "Shodo", class: "Paladin", realm: "Proudmoore" },
+        { name: "Mishern", class: "Shaman", realm: "Proudmoore" },
+        { name: "Bouziedk", class: "DeathKnight", realm: "Proudmoore" },
+        { name: "Hypixyl", class: "Priest", realm: "Proudmoore" },
+        { name: "Liliru", class: "Evoker", realm: "Proudmoore" },
+        { name: "Spectralguy", class: "Priest", realm: "Proudmoore" },
+        { name: "Fidz", class: "Druid", realm: "Proudmoore" },
+        { name: "Demonann", class: "DemonHunter", realm: "Proudmoore" },
+        { name: "Freyalyse", class: "Hunter", realm: "Proudmoore" },
+        { name: "Safari", class: "Druid", realm: "Proudmoore" },
+        { name: "Draasin", class: "Evoker", realm: "Proudmoore" },
+        { name: "Hatedthat", class: "Druid", realm: "Proudmoore" },
+        { name: "Swagasian", class: "Rogue", realm: "Proudmoore" },
+        { name: "Sinisong", class: "Mage", realm: "Proudmoore" },
+        { name: "Sickflash", class: "Paladin", realm: "Proudmoore" },
+        { name: "Salban", class: "Warrior", realm: "Proudmoore" },
+        { name: "Pheus", class: "Shaman", realm: "Proudmoore" },
+        { name: "Orbitall", class: "Shaman", realm: "Proudmoore" },
+        { name: "Sanghai", class: "Monk", realm: "Proudmoore" }, 
         // Add more players as needed
       ];
 
@@ -166,7 +169,7 @@
       // Function to handle raid frame click
       function handleRaidFrameClick(player) {
         // Use the character name and class for the API request
-        const apiUrl = `https://raider.io/api/v1/characters/profile?region=us&realm=Proudmoore&name=${player.name}&fields=mythic_plus_recent_runs`;
+        const apiUrl = `https://raider.io/api/v1/characters/profile?region=us&realm=${player.realm}&name=${player.name}&fields=mythic_plus_recent_runs`;
 
         fetch(apiUrl)
           .then(response => response.json())
@@ -241,11 +244,13 @@
       window.addPlayer = function() {
         const playerName = playerNameInput.value.trim();
         const playerClass = playerClassSelect.value;
-        if (playerName && playerClass) {
-          const newPlayer = { id: players.length + 1, name: playerName, class: playerClass };
+        const playerRealm = playerRealmInput.value.trim();
+        if (playerName && playerClass && playerRealm) {
+          const newPlayer = { id: players.length + 1, name: playerName, class: playerClass, realm: playerRealm };
           players.push(newPlayer);
           playerNameInput.value = ""; // Clear input fields
           playerClassSelect.value = "";
+          playerRealmInput.value = "";
           renderRaidFrames();
         }
       };
