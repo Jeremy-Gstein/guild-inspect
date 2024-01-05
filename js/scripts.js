@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
         { name: "Fidz", class: "Druid", realm: "Proudmoore" },
         { name: "Demonann", class: "DemonHunter", realm: "Proudmoore" },
         { name: "Freyalyse", class: "Hunter", realm: "Proudmoore" },
-        { name: "Safari", class: "Druid", realm: "Proudmoore" },
         { name: "Draasin", class: "Evoker", realm: "Proudmoore" },
         { name: "Hatedthat", class: "Druid", realm: "Proudmoore" },
         { name: "Swagasian", class: "Rogue", realm: "Proudmoore" },
