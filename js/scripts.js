@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
             { name: "Capclit", class: "Monk", realm: "Illidan" },
             { name: "Mistladora", class: "Monk", realm: "Stormrage" },
             { name: "Evelianne", class: "Monk", realm: "Stormrage" },
-            { name: "Rogermeta", class: "Demon Hunter", realm: "Stormrage" },
-            { name: "Amarelysa", class: "Demon Hunter", realm: "Stormrage" },
+            { name: "Rogermeta", class: "DemonHunter", realm: "Stormrage" },
+            { name: "Amarelysa", class: "DemonHunter", realm: "Stormrage" },
             { name: "Delusionol", class: "Priest", realm: "Stormrage" },
             { name: "Sylvána", class: "Priest", realm: "Stormrage" },
             { name: "Nuzzler", class: "Druid", realm: "Stormrage" },
@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
             { name: "Chillfi", class: "Mage", realm: "Stormrage" },
             { name: "Lanathallan", class: "Warlock", realm: "Stormrage" },
             { name: "Chubbers", class: "Warrior", realm: "Stormrage" },
-            { name: "Nicechint", class: "Rogue", realm: "Stormrage" }
+            { name: "Nicechint", class: "Rogue", realm: "Stormrage" },
+            { name: "Tusknight", class: "DeathKnight", realm: "Stormrage" }
         // Add more players as needed
       ];
 
