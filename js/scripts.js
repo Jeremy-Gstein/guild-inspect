@@ -24,24 +24,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Predefined raid group
       const predefinedRaidGroup = [
-        { name: "Shodo", class: "Paladin", realm: "Proudmoore" },
-        { name: "Mishern", class: "Shaman", realm: "Proudmoore" },
-        { name: "Bouziedk", class: "DeathKnight", realm: "Proudmoore" },
-        { name: "Hypixyl", class: "Priest", realm: "Proudmoore" },
-        { name: "Liliru", class: "Evoker", realm: "Proudmoore" },
-        { name: "Spectralguy", class: "Priest", realm: "Proudmoore" },
-        { name: "Fidz", class: "Druid", realm: "Proudmoore" },
-        { name: "Demonann", class: "DemonHunter", realm: "Proudmoore" },
-        { name: "Freyalyse", class: "Hunter", realm: "Proudmoore" },
-        { name: "Draasin", class: "Evoker", realm: "Proudmoore" },
-        { name: "Hatedthat", class: "Druid", realm: "Proudmoore" },
-        { name: "Swagasian", class: "Rogue", realm: "Proudmoore" },
-        { name: "Sinisong", class: "Mage", realm: "Proudmoore" },
-        { name: "Sickflash", class: "Paladin", realm: "Proudmoore" },
-        { name: "Salban", class: "Warrior", realm: "Proudmoore" },
-        { name: "Pheus", class: "Shaman", realm: "Proudmoore" },
-        { name: "Orbitall", class: "Shaman", realm: "Proudmoore" },
-        { name: "Sanghai", class: "Monk", realm: "Proudmoore" }, 
+      { name: “Shdo”, class: “Paladin”, realm: “Stormrage” },
+      { name: “Amashirochan”, class: “Paladin”, realm: “Stormrage” },
+      { name: “Jakksparrow”, class: “Paladin”, realm: “Stormrage” },
+      { name: “Capclit”, class: “Monk”, realm: “Illidan” },
+      { name: “Mistladora”, class: “Monk”, realm: “Stormrage” },
+      { name: “Evelianne”, class: “Monk”, realm: “Stormrage” },
+      { name: “Rogermeta”, class: “Demon Hunter”, realm: “Stormrage” },
+      { name: “Amarelysa”, class: “Demon Hunter”, realm: “Stormrage” },
+      { name: “Delusionol”, class: “Priest”, realm: “Stormrage” },
+      { name: “Sylvána”, class: “Priest”, realm: “Stormrage” },
+      { name: “Nuzzler”, class: “Druid”, realm: “Stormrage” },
+      { name: “Kaelirious”, class: “Hunter”, realm: “Stormrage” },
+      { name: “Chillfi”, class: “Mage”, realm: “Stormrage” },
+      { name: “Lanathallan”, class: “Warlock”, realm: “Stormrage” },
+      { name: “Chubbers”, class: “Warrior”, realm: “Stormrage” },
+      { name: “Nicechint”, class: “Rogue”, realm: “Stormrage” }
         // Add more players as needed
       ];
 
