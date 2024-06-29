@@ -24,12 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Predefined raid group
       const predefinedRaidGroup = [
-      
-        // Add more players as needed
-      ];
-
-      // Simulating initial players
-      const players = [...predefinedRaidGroup];
             { name: "Shdo", class: "Paladin", realm: "Stormrage" },
             { name: "Amashirochan", class: "Paladin", realm: "Stormrage" },
             { name: "Jakksparrow", class: "Paladin", realm: "Stormrage" },
@@ -46,6 +40,12 @@ document.addEventListener("DOMContentLoaded", function() {
             { name: "Lanathallan", class: "Warlock", realm: "Stormrage" },
             { name: "Chubbers", class: "Warrior", realm: "Stormrage" },
             { name: "Nicechint", class: "Rogue", realm: "Stormrage" }
+        // Add more players as needed
+      ];
+
+      // Simulating initial players
+      const players = [...predefinedRaidGroup];
+           
 
 
       // Create raid frames
