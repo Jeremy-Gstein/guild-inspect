@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Predefined raid group
       const predefinedRaidGroup = [
+            { name: "Captclit", class: "Monk", realm: "Thrall" },
+            { name: "Rogermeta", class: "DemonHunter", realm: "Stormrage" },
+            { name: "Mistladora", class: "Monk", realm: "Stormrage" },
+            { name: "Evelianne", class: "Monk", realm: "Stormrage" },
+            { name: "Delusionol", class: "Priest", realm: "Stormrage" },
+            { name: "Sylvána", class: "Priest", realm: "Stormrage" },
             { name: "Shdo", class: "Paladin", realm: "Stormrage" },
             { name: "Amashirochan", class: "Paladin", realm: "Stormrage" },
             { name: "Jakksparrow", class: "Paladin", realm: "Stormrage" },
-            { name: "Captclit", class: "Monk", realm: "Illidan" },
-            { name: "Mistladora", class: "Monk", realm: "Stormrage" },
-            { name: "Evelianne", class: "Monk", realm: "Stormrage" },
-            { name: "Rogermeta", class: "DemonHunter", realm: "Stormrage" },
             { name: "Amarelysa", class: "DemonHunter", realm: "Stormrage" },
-            { name: "Delusionol", class: "Priest", realm: "Stormrage" },
-            { name: "Sylvána", class: "Priest", realm: "Stormrage" },
             { name: "Nuzzler", class: "Druid", realm: "Stormrage" },
             { name: "Kaelirious", class: "Hunter", realm: "Stormrage" },
             { name: "Chillfi", class: "Mage", realm: "Stormrage" },
