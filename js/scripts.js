@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             { name: "Kaelirious", class: "Hunter", realm: "Stormrage" },
             { name: "Chillfi", class: "Mage", realm: "Stormrage" },
             { name: "Lanathallan", class: "Warlock", realm: "Stormrage" },
-            { name: "Chubbers", class: "Warrior", realm: "Stormrage" },
+            { name: "Chuubers", class: "Warrior", realm: "Stormrage" },
             { name: "Nicechint", class: "Rogue", realm: "Stormrage" },
             { name: "Tusknight", class: "DeathKnight", realm: "Stormrage" }
         // Add more players as needed
