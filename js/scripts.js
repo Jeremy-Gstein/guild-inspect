@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             { name: "Shdo", class: "Paladin", realm: "Stormrage" },
             { name: "Amashirochan", class: "Paladin", realm: "Stormrage" },
             { name: "Jakksparrow", class: "Paladin", realm: "Stormrage" },
-            { name: "Capclit", class: "Monk", realm: "Illidan" },
+            { name: "Captclit", class: "Monk", realm: "Illidan" },
             { name: "Mistladora", class: "Monk", realm: "Stormrage" },
             { name: "Evelianne", class: "Monk", realm: "Stormrage" },
             { name: "Rogermeta", class: "DemonHunter", realm: "Stormrage" },
