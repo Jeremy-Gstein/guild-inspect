@@ -24,27 +24,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Predefined raid group
       const predefinedRaidGroup = [
-      { name: “Shdo”, class: “Paladin”, realm: “Stormrage” },
-      { name: “Amashirochan”, class: “Paladin”, realm: “Stormrage” },
-      { name: “Jakksparrow”, class: “Paladin”, realm: “Stormrage” },
-      { name: “Capclit”, class: “Monk”, realm: “Illidan” },
-      { name: “Mistladora”, class: “Monk”, realm: “Stormrage” },
-      { name: “Evelianne”, class: “Monk”, realm: “Stormrage” },
-      { name: “Rogermeta”, class: “Demon Hunter”, realm: “Stormrage” },
-      { name: “Amarelysa”, class: “Demon Hunter”, realm: “Stormrage” },
-      { name: “Delusionol”, class: “Priest”, realm: “Stormrage” },
-      { name: “Sylvána”, class: “Priest”, realm: “Stormrage” },
-      { name: “Nuzzler”, class: “Druid”, realm: “Stormrage” },
-      { name: “Kaelirious”, class: “Hunter”, realm: “Stormrage” },
-      { name: “Chillfi”, class: “Mage”, realm: “Stormrage” },
-      { name: “Lanathallan”, class: “Warlock”, realm: “Stormrage” },
-      { name: “Chubbers”, class: “Warrior”, realm: “Stormrage” },
-      { name: “Nicechint”, class: “Rogue”, realm: “Stormrage” }
+      
         // Add more players as needed
       ];
 
       // Simulating initial players
       const players = [...predefinedRaidGroup];
+            { name: "Shdo", class: "Paladin", realm: "Stormrage" },
+            { name: "Amashirochan", class: "Paladin", realm: "Stormrage" },
+            { name: "Jakksparrow", class: "Paladin", realm: "Stormrage" },
+            { name: "Capclit", class: "Monk", realm: "Illidan" },
+            { name: "Mistladora", class: "Monk", realm: "Stormrage" },
+            { name: "Evelianne", class: "Monk", realm: "Stormrage" },
+            { name: "Rogermeta", class: "Demon Hunter", realm: "Stormrage" },
+            { name: "Amarelysa", class: "Demon Hunter", realm: "Stormrage" },
+            { name: "Delusionol", class: "Priest", realm: "Stormrage" },
+            { name: "Sylvána", class: "Priest", realm: "Stormrage" },
+            { name: "Nuzzler", class: "Druid", realm: "Stormrage" },
+            { name: "Kaelirious", class: "Hunter", realm: "Stormrage" },
+            { name: "Chillfi", class: "Mage", realm: "Stormrage" },
+            { name: "Lanathallan", class: "Warlock", realm: "Stormrage" },
+            { name: "Chubbers", class: "Warrior", realm: "Stormrage" },
+            { name: "Nicechint", class: "Rogue", realm: "Stormrage" }
+
 
       // Create raid frames
       function renderRaidFrames() {
